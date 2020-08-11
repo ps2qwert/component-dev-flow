@@ -1,0 +1,24 @@
+{
+  "name": "react-library",
+  "version": "1.0.0",
+  "main": "./lib/bundle.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run rollup -c",
+    "start": "yarn run rollup -c -w"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/preset-react": "^7.10.1",
+    "rollup": "^2.18.0",
+    "rollup-plugin-babel": "^4.4.0"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  }
+}
