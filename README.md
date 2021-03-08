@@ -2,7 +2,7 @@
  * @Author: PengKang
  * @Date: 2020-08-11 16:57:54
  * @LastEditors: PengKang
- * @LastEditTime: 2021-03-08 14:50:55
+ * @LastEditTime: 2021-03-08 16:03:10
  * @FilePath: \react-library\README.md
 -->
 
@@ -82,7 +82,7 @@ npm link react-library(package.json中的name)
 
 ## 5.版本升级、change log 生成及发布
 
-#### 5.1 版本升级 npm version
+### 5.1 版本升级 npm version
 
 ```
 // npm version 命令概览
@@ -92,17 +92,40 @@ npm version [<newversion> | major | minor | patch | premajor | preminor | prepat
 (run in package dir)
 ```
 以下设置都是package里面的版本号
-- prerelease
-  版本号 1.0.0-> 1.0.1-0，再次执行 1.0.1-0 -> 1.0.1-1 
-- prepatch 版本号1.0.1-1变为 1.0.2-0
-- preminor
-- premajor
-- patch
-- minor
-- major
+#### prerelease
 
+版本号 1.0.0-> 1.0.1-0，再次执行 1.0.1-0 -> 1.0.1-1
+> 当执行npm version prerelease时，如果没有预发布号，则增加minor，同时prerelease 设为0；
+如果有prerelease， 则prerelease 增加1。 
+
+##### prepatch
+版本号1.0.1-1变为 1.0.2-0
+> 直接升级小号，增加预发布号为0。
+
+#####  preminor
+版本号1.0.2-0变为 1.1.0-0
+> 直接升级中号，小号置为0，增加预发布号为0。
+
+
+#####  premajor
+版本号1.1.0-0变为 2.0.0-0
+> 直接升级大号，中号、小号置为0，增加预发布号为0。
+
+#####  patch
+
+版本号2.0.0变为 2.0.1;
+
+#####  minor
+
+版本号2.0.1变为 2.1.0;
+
+#####  major
+
+版本号2.0.1变为 3.0.0;
 
 ## 6.Readme模板
+
+推荐一份高start的模板[standard-readme](https://github.com/RichardLitt/standard-readme),或者使用[readme-md-generator](https://github.com/kefranabg/readme-md-generator)组件生成，下面贴一个比较简单的readme模板：
 
 # Title
 
@@ -125,5 +148,11 @@ PRs accepted.
 ## License
 
 MIT © Richard McRichface
+
+
+## 7.组件文档搭建
+
+* [dumi](https://d.umijs.org/) 
+* [vuePress](https://vuepress.vuejs.org/zh/)
 
 
