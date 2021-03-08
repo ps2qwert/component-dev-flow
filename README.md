@@ -2,7 +2,7 @@
  * @Author: PengKang
  * @Date: 2020-08-11 16:57:54
  * @LastEditors: PengKang
- * @LastEditTime: 2020-09-09 18:19:43
+ * @LastEditTime: 2021-03-08 14:50:55
  * @FilePath: \react-library\README.md
 -->
 
@@ -100,3 +100,30 @@ npm version [<newversion> | major | minor | patch | premajor | preminor | prepat
 - patch
 - minor
 - major
+
+
+## 6.Readme模板
+
+# Title
+
+This is an example file with default selections.
+
+## Install
+
+```
+```
+
+## Usage
+
+```
+```
+
+## Contributing
+
+PRs accepted.
+
+## License
+
+MIT © Richard McRichface
+
+
