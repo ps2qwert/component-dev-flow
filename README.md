@@ -2,7 +2,7 @@
  * @Author: PengKang
  * @Date: 2020-08-11 16:57:54
  * @LastEditors: PengKang
- * @LastEditTime: 2021-03-08 16:03:10
+ * @LastEditTime: 2021-04-26 15:03:09
  * @FilePath: \react-library\README.md
 -->
 
@@ -123,23 +123,46 @@ npm version [<newversion> | major | minor | patch | premajor | preminor | prepat
 
 版本号2.0.1变为 3.0.0;
 
+### 5.2 change log生成
+
+如果我们commit提交都是按照Angular规范的话，我就可以根据版本统一生成改动日志，在这里我们主要使用conventional-changelog工具
+
+```
+npm install -g conventional-changelog
+conventional-changelog -p angular -i CHANGELOG.md -w -r 0
+```
+
+为了方便以后使用，可以写到package里面
+
+```
+{
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+  }
+}
+
+npm run changelog 
+or 
+yarn changelog
+```
+
+
+
 ## 6.Readme模板
 
 推荐一份高start的模板[standard-readme](https://github.com/RichardLitt/standard-readme),或者使用[readme-md-generator](https://github.com/kefranabg/readme-md-generator)组件生成，下面贴一个比较简单的readme模板：
 
+```
 # Title
 
 This is an example file with default selections.
 
 ## Install
 
-```
-```
+
 
 ## Usage
 
-```
-```
 
 ## Contributing
 
@@ -148,7 +171,7 @@ PRs accepted.
 ## License
 
 MIT © Richard McRichface
-
+```
 
 ## 7.组件文档搭建
 

@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn run rollup -c",
-    "start": "yarn run rollup -c -w"
+    "start": "yarn run rollup -c -w",
+    "changelog" : "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",

@@ -1,4 +1,9 @@
-# 1.0.0 (2021-03-08)
+# 1.0.0 (2021-04-26)
+
+
+### Bug Fixes
+
+* **readme:** 完善readme内容 ([23e035e](https://github.com/ps2qwert/component-dev-flow/commit/23e035e970baba6e7917ffb4b6196c525102c951))
 
 
 ### Features
